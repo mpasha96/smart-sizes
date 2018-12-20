@@ -1,0 +1,1 @@
+$(document).ready(function(){$('.slider').slick({slide:'.slide',dots:true});$('#journey').on('init',function(slick){alert('init');$('#map-vid')[0].play();});$('#journey').on('afterChange',function(event,slick,currentSlide){if(currentSlide==1){$('#journey').slick('slickPause');$('#map-vid')[0].play();}});});

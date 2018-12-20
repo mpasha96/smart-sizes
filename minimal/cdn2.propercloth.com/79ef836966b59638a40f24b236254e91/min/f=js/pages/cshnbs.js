@@ -1,0 +1,9 @@
+window.onload=function(){document.querySelector('.cshnbs').classList.add('is-loaded');};function onIntersection(entries){for(let entry of entries){if(entry.intersectionRatio>=0.3){entry.target.classList.add('is-fully-visible');}
+else{}}}
+let config=[]
+for(let i=0;i<=1;i+=0.01){config.push(i)}
+let observer=new IntersectionObserver(onIntersection,{threshold:config})
+let elements=document.querySelectorAll('section');for(let element of elements){observer.observe(element)}
+$.easing.jswing=$.easing.swing;$.extend($.easing,{def:'easeOutQuart',swing:function(x,t,b,c,d){return $.easing[$.easing.def](x,t,b,c,d);},easeOutQuart:function(x,t,b,c,d){return-c*((t=t/d-1)*t*t*t-1)+b;}});function dataWord(){$("[data-words]").attr("data-words",function(i,d){var $self=$(this),$words=d.split("|"),tot=$words.length,c=0;for(var i=0;i<tot;i++)$self.append($('<span/>',{text:$words[i]}));$words=$self.find("span").hide();(function loop(){$self.animate({width:$words.eq(c).width()},400,'easeOutQuart');$words.stop().fadeOut(300).eq(c).fadeIn(300).delay(2500).show(0,loop);c=++c%tot;}());});}
+$(window).on("load",dataWord);$('.quote-wrap').slick({slide:'.quotes',speed:600,fade:true,arrows:false,swipe:false,adaptiveHeight:true});var index=0;$chooserLink=$('.chooser a');$('.quote-chooser > .toggle:first').click(function(e){e.preventDefault;$(this).addClass('is-open');}).find('a').click(function(e){return false;});$chooserLink.click(function(e){e.preventDefault;$chooserLink.removeClass('is-active');index=$(this).index();term=$(this).text();console.log(index);$('.quote-wrap').slick('slickGoTo',index);$('.quote-chooser .term').text(term);$(this).addClass('is-active');$(this).closest('.toggle').removeClass('is-open');});$('.learn-more').click(function(e){e.preventDefault()
+$('html, body').animate({scrollTop:$("#more").offset().top-160},300);});
