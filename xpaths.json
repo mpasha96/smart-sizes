@@ -28,6 +28,8 @@
         "6.5": "//*[@id=\"smart_size_step_3\"]/div/label[14]/span",
         "6.6": "//*[@id=\"smart_size_step_3\"]/div/label[15]/span",
         "6.7": "//*[@id=\"smart_size_step_3\"]/div/label[16]/span",
+        "ft": "//*[@id=\"smart_size_step_3\"]/div/label[17]/span/i[2]/input",
+        "in": "//*[@id=\"smart_size_step_3\"]/div/label[17]/span/i[3]/input",
         "Skip": "//*[@id=\"smart_size_step_3\"]/div/label[18]/span"
     },
     "step_3": {
@@ -47,6 +49,7 @@
         "215": "//*[@id=\"smart_size_step_4\"]/div/label[14]/span",
         "220": "//*[@id=\"smart_size_step_4\"]/div/label[15]/span",
         "225": "//*[@id=\"smart_size_step_4\"]/div/label[16]/span",
+        "lbs": "//*[@id=\"smart_size_step_4\"]/div/label[17]/span/i[2]/input",
         "Skip": "//*[@id=\"smart_size_step_4\"]/div/label[18]/span"
     },
     "step_4": {
@@ -73,6 +76,7 @@
         "40": "//*[@id=\"smart_size_step_7\"]/div/label[14]/span",
         "41": "//*[@id=\"smart_size_step_7\"]/div/label[15]/span",
         "42": "//*[@id=\"smart_size_step_7\"]/div/label[16]/span",
+        "in": "//*[@id=\"smart_size_step_7\"]/div/label[17]/span/i[2]/input",
         "Skip": "//*[@id=\"smart_size_step_7\"]/div/label[18]/span"
     },
     "step_6": {
@@ -106,6 +110,7 @@
         "19.5": "//*[@id=\"smart_size_step_9\"]/div/label[14]/span",
         "20.0": "//*[@id=\"smart_size_step_9\"]/div/label[15]/span",
         "20.5": "//*[@id=\"smart_size_step_9\"]/div/label[16]/span",
+        "in": "//*[@id=\"smart_size_step_9\"]/div/label[17]/span/i[2]/input",
         "Skip": "//*[@id=\"smart_size_step_9\"]/div/label[18]/span"
     },
     "step_9": {
@@ -125,6 +130,7 @@
         "36.5": "//*[@id=\"smart_size_step_10\"]/div/label[14]/span",
         "37.0": "//*[@id=\"smart_size_step_10\"]/div/label[15]/span",
         "37.5": "//*[@id=\"smart_size_step_10\"]/div/label[16]/span",
+        "in": "//*[@id=\"smart_size_step_10\"]/div/label[17]/span/i[2]/input",
         "Skip": "//*[@id=\"smart_size_step_10\"]/div/label[18]/span"
     },
     "step_10": {
